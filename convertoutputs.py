@@ -9,7 +9,11 @@ import argparse
 
 def process_file(filepath: str, output_filename: str):
     df = pd.read_csv(filepath, delimiter=",")
-    df.rename(columns={"prediction": "Prediction", "score": "Probability_score"}, inplace=True)
+    df.rename(
+            columns={"prediction": "Prediction", "score": "Probability_score",
+                    "id": "Sequence_id", "sequence": "Sequence"}, 
+            inplace=True
+    )
     df.to_csv(output_filename, sep="\t", index=False)
 
 
