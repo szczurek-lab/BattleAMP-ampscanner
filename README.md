@@ -1,8 +1,21 @@
-# Amp-scanner
-remember to clone **recursively** or init submodules after cloning
+# AMPScanner
 
-please read `experiments_tools/README.md`
+## Supported tasks
+AMP classification
+
+## Installation
 
 **environment**
 - python 3.8
 - `requirements.txt`
+
+```
+conda create -n ampscanner python=3.8
+conda activate ampscanner
+sh setup.sh
+```
+
+Test whether everything works:
+```
+sh inference.sh sample.fasta results.tsv
+```
