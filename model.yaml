@@ -1,0 +1,12 @@
+name: ampscanner
+version: 2.0.0
+type: classifier
+framework: cnn-lstm
+description: >
+  AMP Scanner v2: CNN + LSTM classifier for antimicrobial peptide prediction.
+  Sequences are integer-encoded and padded to length 200.
+paper: "https://doi.org/10.1093/bioinformatics/bty179"
+source_repo: "https://github.com/lincoln-harris/amp-scanner-v2"
+length_min: 10
+length_max: 200
+gpu_required: false
